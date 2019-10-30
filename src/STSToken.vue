@@ -82,7 +82,6 @@
                 resumeDisabled: true,
                 pauseDisabled: true,
                 statusText: '',
-                pauseDisabled: true,
                 uploader: null
             }
         },
@@ -152,7 +151,7 @@
                     },
                     // 开始上传
                     onUploadstarted: function (uploadInfo) {
-                        // 如果是 STSToken 上传方式, 需要调用 uploader.setUploadAuthAndAddress 方法
+                        // 如果是 STSToken 上传方式, 需要调用 uploader.setSTSToken 方法
                         // 用户需要自己获取 accessKeyId, accessKeySecret,secretToken
                         // 下面的 URL 只是测试接口, 用于获取 测试的 accessKeyId, accessKeySecret,secretToken
                         let stsUrl = 'http://demo-vod.cn-shanghai.aliyuncs.com/voddemo/CreateSecurityToken?BusinessType=vodai&TerminalType=pc&DeviceModel=iPhone9,2&UUID=67999yyuuuy&AppVersion=1.0.0'
